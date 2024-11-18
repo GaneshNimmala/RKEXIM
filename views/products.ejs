@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="RK EXIM exporter supplier of fuel and water treatment chemicals additives pipe fittings biodegradable products handicrafts from India." />
+    <meta name="keywords" content="RK EXIM exporter supplier of fuel and water treatment chemicals additives pipe fittings biodegradable products handicrafts from India." />
+    <title>RK EXIM Exporter Supplier from India</title>
+    <link rel="stylesheet" href="/assets/owl-carousale/owl-carousel/owl.carousel.css" />
+    <link rel="stylesheet" href="/assets/owl-carousale/owl-carousel/owl.theme.css" />
+    <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/bootstrap-icons/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="/assets/aos/aos.css" />
+    <link rel="stylesheet" href="/assets/css/common.css" />
+    <link rel="stylesheet" href="/assets/css/style1.css" />
+  </head>
+  <body>
+    <%- include('./partials/header') %>
+    <main>
+      <!-- inner banner -->
+      <%- include('./partials/breadcrumbs',{path:"Products"}) %>
+      <!-- //inner banner -->
+
+      <section id="services-section">
+        <section class="section services-section" id="products">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="section-title" data-aos="zoom-in-up">
+                  <h2>Products</h2>
+                  <p>
+                    RK Exim is a trusted exporter and importer, offering a diverse range of products including fuel treatment chemicals, pipe fittings, and biodegradable leaf plates. Our offerings
+                    ensure enhanced fuel efficiency, fluid flow control, and eco-friendly disposable solutions for various industries worldwide.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!-- feaure box -->
+
+              <div class="col-sm-6 col-lg-3 mt-4" data-aos="zoom-in-up">
+                <div class="service-box">
+                  <div class="custom-image">
+                    <img src="/assets/img/fueltratmentchemical.jpeg" alt="" />
+                  </div>
+                  <div class="custom-img-text mt-3">
+                    <h5><a href="/fueltreatmentchemicals">Fuel Treatment Chemicals</a></h5>
+                  </div>
+                </div>
+              </div>
+              <!-- / -->
+              <!-- feaure box -->
+              <div class="col-sm-6 col-lg-3 mt-4" data-aos="zoom-in-up">
+                <div class="service-box">
+                  <div class="custom-image">
+                    <img src="/assets/img/steel-pipe-fittings.jpg" alt="" />
+                  </div>
+                  <div class="custom-img-text mt-3">
+                    <h5><a href="/pipefittings">Pipe Fittings</a></h5>
+                  </div>
+                </div>
+              </div>
+              <!-- / -->
+              <!-- feaure box -->
+              <div class="col-sm-6 col-lg-3 mt-4" data-aos="zoom-in-up">
+                <div class="service-box">
+                  <div class="custom-image">
+                    <img src="/assets/img/arecaplate.jpeg" alt="" class="img-fluid" />
+                  </div>
+                  <div class="custom-img-text mt-3">
+                    <h5><a href="/biodegradableleafplates">Biodegradable disposable leaf plates</a></h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-3 mt-4" data-aos="zoom-in-up">
+                <div class="service-box">
+                  <div class="custom-image">
+                    <img src="/assets/img/handicrafts.jpeg" alt="" class="img-fluid" />
+                  </div>
+                  <div class="custom-img-text mt-3">
+                    <h5><a href="/handicrafts">Handicrafts</a></h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <%- include('./partials/footer') %>
+
+    <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/aos/aos.js"></script>
+    <script>
+      (function () {
+        "use strict";
+
+        /**
+         * Easy selector helper function
+         */
+        const select = (el, all = false) => {
+          el = el.trim();
+          if (all) {
+            return [...document.querySelectorAll(el)];
+          } else {
+            return document.querySelector(el);
+          }
+        };
+
+        /**
+         * Easy event listener function
+         */
+        const on = (type, el, listener, all = false) => {
+          let selectEl = select(el, all);
+          if (selectEl) {
+            if (all) {
+              selectEl.forEach((e) => e.addEventListener(type, listener));
+            } else {
+              selectEl.addEventListener(type, listener);
+            }
+          }
+        };
+
+        /**
+         * Easy on scroll event listener
+         */
+        const onscroll = (el, listener) => {
+          el.addEventListener("scroll", listener);
+        };
+
+        /**
+         * Mobile nav toggle
+         */
+        on("click", ".mobile-nav-toggle", function (e) {
+          select("#navbar").classList.toggle("navbar-mobile");
+          this.classList.toggle("bi-list");
+          this.classList.toggle("bi-x");
+        });
+
+        /**
+         * Mobile nav dropdowns activate
+         */
+        on(
+          "click",
+          ".navbar .dropdown > a",
+          function (e) {
+            if (select("#navbar").classList.contains("navbar-mobile")) {
+              e.preventDefault();
+              this.nextElementSibling.classList.toggle("dropdown-active");
+            }
+          },
+          true
+        );
+      })();
+    </script>
+    <script>
+      // code for AOS
+      AOS.init({
+        duration: 1000,
+        easing: "ease-in-out",
+        once: true,
+        mirror: false,
+      });
+    </script>
+
+    //script for google translater
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({ pageLanguage: "en" }, "google_translate_element");
+      }
+    </script>
+
+    <script
+      type="text/javascript"
+      src="https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit"
+    ></script>
+    // end of script for google translater
+  </body>
+</html>

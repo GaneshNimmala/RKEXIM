@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="RK EXIM exporter supplier of fuel and water treatment chemicals additives pipe fittings biodegradable products handicrafts from India." />
+    <meta name="keywords" content="RK EXIM exporter supplier of fuel and water treatment chemicals additives pipe fittings biodegradable products handicrafts from India." />
+    <title>RK EXIM Exporter Supplier from India</title>
+
+    <link rel="stylesheet" href="/assets/owl-carousale/owl-carousel/owl.carousel.css" />
+    <link rel="stylesheet" href="/assets/owl-carousale/owl-carousel/owl.theme.css" />
+    <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/bootstrap-icons/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="/assets/aos/aos.css" />
+
+    <link rel="stylesheet" href="/assets/css/common.css" />
+    <link rel="stylesheet" href="/assets/css/style1.css" />
+    <link rel="stylesheet" href="/assets/css/productdetails.css" />
+  </head>
+  <body>
+    <%- include('./partials/header') %>
+    <main>
+      <section id="productdetails">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-4">
+              <img src="/assets/img/steel-pipe-fittings.jpg" alt="" class="img-fluid" />
+            </div>
+            <div class="col-xl-8">
+              <h1>Pipe Fittings</h1>
+              <p><strong>HS Code:</strong> 730721, 730722, 730729</p>
+              <p>
+                <strong>Product Description:</strong> Pipe fittings are components used to connect, control, and adapt the flow of fluids (liquids or gases) in plumbing and piping systems. They are
+                crucial for joining different sections of pipe together, changing the direction of flow, or regulating the flow rate. Pipe fittings come in various shapes, sizes, and materials to suit
+                different applications and environments.
+              </p>
+              <h2>Types of Pipe Fittings:</h2>
+              <h3>Metal Industry:</h3>
+              <p>Pipe & Fitting: Elbow, Tee, Reducer, Return Bends, Stub Ends, Cap, Collar, Cross, Inset, etc.</p>
+              <p>Socket: Coupling, Plug Union, Hose Nipples, Hex Nipples, Barrel Nipples, Bugings & Adaptors, Nipples in BSP, NPT, Threaded (Male, Female).</p>
+              <p>Flanges: Weld Neck, Slipon (sorf), Blind Socket, Weld as per B.S. 10 Table E and ANSI B. 16.5 Class 150 # 300, etc.</p>
+              <h3>Dairy Fittings:</h3>
+              <p>SMS Type union, Weldable Union, Din Type Union, Dairy Tee, T.C. Clamp.</p>
+              <p>SMS Type butterfly valve, T.C. End Ball Valve, Plug Valve.</p>
+              <p>Two way and Three-way Valves.</p>
+              <p>Spray ball, E.P. Finish & E.P. Finish Pipes, etc.</p>
+              <h2>Pipe Fittings Application Industries:</h2>
+              <p>Chemicals, Pharmaceutical, Furnace Rollers, Petrochemicals, Textile Machinery, Diary, Fertilizers, Instruments, Paper & Pulp, Cements, Sugar Industry, Heavy Industries.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <%- include('./partials/footer') %>
+
+    <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/aos/aos.js"></script>
+    <script>
+      (function () {
+        "use strict";
+
+        /**
+         * Easy selector helper function
+         */
+        const select = (el, all = false) => {
+          el = el.trim();
+          if (all) {
+            return [...document.querySelectorAll(el)];
+          } else {
+            return document.querySelector(el);
+          }
+        };
+
+        /**
+         * Easy event listener function
+         */
+        const on = (type, el, listener, all = false) => {
+          let selectEl = select(el, all);
+          if (selectEl) {
+            if (all) {
+              selectEl.forEach((e) => e.addEventListener(type, listener));
+            } else {
+              selectEl.addEventListener(type, listener);
+            }
+          }
+        };
+
+        /**
+         * Easy on scroll event listener
+         */
+        const onscroll = (el, listener) => {
+          el.addEventListener("scroll", listener);
+        };
+
+        /**
+         * Mobile nav toggle
+         */
+        on("click", ".mobile-nav-toggle", function (e) {
+          select("#navbar").classList.toggle("navbar-mobile");
+          this.classList.toggle("bi-list");
+          this.classList.toggle("bi-x");
+        });
+
+        /**
+         * Mobile nav dropdowns activate
+         */
+        on(
+          "click",
+          ".navbar .dropdown > a",
+          function (e) {
+            if (select("#navbar").classList.contains("navbar-mobile")) {
+              e.preventDefault();
+              this.nextElementSibling.classList.toggle("dropdown-active");
+            }
+          },
+          true
+        );
+      })();
+    </script>
+    <script>
+      // code for AOS
+      AOS.init({
+        duration: 1000,
+        easing: "ease-in-out",
+        once: true,
+        mirror: false,
+      });
+    </script>
+
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({ pageLanguage: "en" }, "google_translate_element");
+      }
+    </script>
+
+    <script
+      type="text/javascript"
+      src="https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit"
+    ></script>
+  </body>
+</html>

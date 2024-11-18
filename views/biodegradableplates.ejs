@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="RK EXIM exporter supplier of fuel and water treatment chemicals additives pipe fittings biodegradable products handicrafts from India." />
+    <meta name="keywords" content="RK EXIM exporter supplier of fuel and water treatment chemicals additives pipe fittings biodegradable products handicrafts from India." />
+    <title>RK EXIM Exporter Supplier from India</title>
+
+    <link rel="stylesheet" href="/assets/owl-carousale/owl-carousel/owl.carousel.css" />
+    <link rel="stylesheet" href="/assets/owl-carousale/owl-carousel/owl.theme.css" />
+    <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/bootstrap-icons/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="/assets/aos/aos.css" />
+
+    <link rel="stylesheet" href="/assets/css/common.css" />
+    <link rel="stylesheet" href="/assets/css/style1.css" />
+    <link rel="stylesheet" href="/assets/css/productdetails.css" />
+  </head>
+  <body>
+    <%- include('./partials/header') %>
+    <main>
+      <section id="productdetails">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-4">
+              <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/assets/img/products/plate1.png" class="d-block w-100" alt="disposable plate" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/assets/img/products/plate2.png" class="d-block w-100" alt="disposable plate" />
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            <div class="col-xl-8">
+              <h1>Biodegradable Disposable Leaf Plates</h1>
+              <p><strong>HS Code:</strong> 460219</p>
+              <p>
+                <strong>Product Description:</strong> Biodegradable disposable leaf plates are eco-friendly alternatives to traditional disposable plates made from plastic or paper. These plates are
+                crafted from the naturally fallen leaves of certain trees, typically from the areca palm (Areca catechu) or other palm varieties.
+              </p>
+              <p>
+                <strong>Product Material:</strong> The plates are made from dried leaves that naturally fall from trees, primarily the areca palm tree. These leaves are collected, cleaned, and molded
+                into various plate shapes and sizes without the need for any chemicals or additives. The natural fibers and structure of the leaves make them sturdy yet lightweight.
+              </p>
+              <p>
+                <strong>Appearance:</strong> Biodegradable leaf plates have a natural and rustic appearance, retaining the texture and color of the palm leaves. They often have an earthy tone, ranging
+                from light beige to dark brown, adding an organic touch to dining settings.
+              </p>
+              <p>
+                <strong>Sizes and Shapes:</strong> Leaf plates come in various sizes and shapes to accommodate different serving needs. Common shapes include round, square, rectangular, and oval, with
+                sizes ranging from small appetizer plates to larger dinner plates.
+              </p>
+              <p>
+                <strong>Strength and Durability:</strong> Despite being lightweight, leaf plates are remarkably durable and capable of holding both hot and cold food items without leaking or becoming
+                soggy. They can withstand moderate heat and are suitable for serving a wide range of foods, including wet and oily dishes.
+              </p>
+              <p>
+                <strong>Biodegradability and Sustainability:</strong> Leaf plates are fully biodegradable and compostable, meaning they break down naturally into organic matter when disposed of.
+                Unlike plastic plates, which can take hundreds of years to decompose, leaf plates decompose within a few months, returning nutrients to the soil without leaving behind harmful
+                residues. They are sourced sustainably, as they are made from fallen leaves that would otherwise go to waste.
+              </p>
+              <p>
+                <strong>Versatility:</strong> Leaf plates are versatile and suitable for various occasions and settings, including parties, weddings, picnics, catered events, food stalls, and more.
+                They offer a unique and environmentally friendly alternative to traditional disposable tableware.
+              </p>
+              <p>
+                <strong>Safe and Non-Toxic:</strong> Leaf plates are free from chemicals, toxins, and synthetic additives, making them safe for serving food. They are also heat-resistant,
+                microwave-safe, and oven-safe, although prolonged exposure to high temperatures should be avoided.
+              </p>
+              <p>
+                <strong>Disposal:</strong> After use, leaf plates can be disposed of along with organic waste or composted to facilitate their decomposition. Proper disposal ensures minimal
+                environmental impact and contributes to sustainable waste management practices.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <%- include('./partials/footer') %>
+
+    <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/aos/aos.js"></script>
+    <script>
+      (function () {
+        "use strict";
+
+        /**
+         * Easy selector helper function
+         */
+        const select = (el, all = false) => {
+          el = el.trim();
+          if (all) {
+            return [...document.querySelectorAll(el)];
+          } else {
+            return document.querySelector(el);
+          }
+        };
+
+        /**
+         * Easy event listener function
+         */
+        const on = (type, el, listener, all = false) => {
+          let selectEl = select(el, all);
+          if (selectEl) {
+            if (all) {
+              selectEl.forEach((e) => e.addEventListener(type, listener));
+            } else {
+              selectEl.addEventListener(type, listener);
+            }
+          }
+        };
+
+        /**
+         * Easy on scroll event listener
+         */
+        const onscroll = (el, listener) => {
+          el.addEventListener("scroll", listener);
+        };
+
+        /**
+         * Mobile nav toggle
+         */
+        on("click", ".mobile-nav-toggle", function (e) {
+          select("#navbar").classList.toggle("navbar-mobile");
+          this.classList.toggle("bi-list");
+          this.classList.toggle("bi-x");
+        });
+
+        /**
+         * Mobile nav dropdowns activate
+         */
+        on(
+          "click",
+          ".navbar .dropdown > a",
+          function (e) {
+            if (select("#navbar").classList.contains("navbar-mobile")) {
+              e.preventDefault();
+              this.nextElementSibling.classList.toggle("dropdown-active");
+            }
+          },
+          true
+        );
+      })();
+    </script>
+    <script>
+      // code for AOS
+      AOS.init({
+        duration: 1000,
+        easing: "ease-in-out",
+        once: true,
+        mirror: false,
+      });
+    </script>
+
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({ pageLanguage: "en" }, "google_translate_element");
+      }
+    </script>
+
+    <script
+      type="text/javascript"
+      src="https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit"
+    ></script>
+  </body>
+</html>

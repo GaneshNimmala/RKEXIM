@@ -1,0 +1,27 @@
+#productdetails {
+  padding: 50px 0px;
+
+  background-color: rgba(219, 215, 203, 0.525);
+}
+#productdetails h1,
+h2,
+h3,
+h4 {
+  color: coral;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+#productdetails h2,
+h3,
+h4 {
+  color: coral;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+#productdetails img {
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgb(5, 5, 5);
+}
+#productdetails p,
+ul,
+ol {
+  color: #20247b;
+}

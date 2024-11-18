@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="RK EXIM exporter supplier of fuel and water treatment chemicals additives pipe fittings biodegradable products handicrafts from India." />
+    <meta name="keywords" content="RK EXIM exporter supplier of fuel and water treatment chemicals additives pipe fittings biodegradable products handicrafts from India." />
+    <title>RK EXIM Exporter Supplier from India</title>
+
+    <link rel="stylesheet" href="/assets/owl-carousale/owl-carousel/owl.carousel.css" />
+    <link rel="stylesheet" href="/assets/owl-carousale/owl-carousel/owl.theme.css" />
+    <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/bootstrap-icons/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="/assets/aos/aos.css" />
+
+    <link rel="stylesheet" href="/assets/css/common.css" />
+    <link rel="stylesheet" href="/assets/css/style1.css" />
+    <link rel="stylesheet" href="/assets/css/productdetails.css" />
+  </head>
+  <body>
+    <%- include('./partials/header') %>
+    <main>
+      <section id="productdetails">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-4">
+              <img src="/assets/img/products/fuel additive.png" alt="" class="img-fluid" />
+            </div>
+            <div class="col-xl-8">
+              <h1>Fuel Treatment Chemicals</h1>
+              <p><strong>HS CODE:</strong> 38112100</p>
+              <p>
+                <strong>Product description:</strong> Fuel treatment chemicals are additives designed to improve the performance and efficiency of fuels, as well as to maintain the integrity of fuel
+                systems. These chemicals are typically added to gasoline, diesel, or other types of fuel to address various issues such as fuel stability, corrosion prevention, lubrication
+                enhancement, and emission reduction.
+              </p>
+              <h3>Fuel Oil Additive</h3>
+              <p>
+                <strong>Description:</strong> Fuel Oil Additive is a specially formulated catalyst compound in solution in an aromatic solvent, which is readily soluble in fuel oil and which acts as a
+                combustion catalyst by increasing the speed of oxidation of unburnt hydrocarbons during the process of heavy fuel oil combustion.
+              </p>
+              <h4>Application</h4>
+              <ul>
+                <li>Reduces significantly the amount of soot and unburnt hydrocarbons (over 50%) formed during the combustion of heavy fuel oils.</li>
+                <li>Reduces excess air used during the combustion process.</li>
+                <li>Improves the flame homogeneity and achieves a more stable yield of combustion along the time.</li>
+                <li>Reduces deposits on heat transfer surfaces and consequently achieves more efficient heat transfer in the convection zone.</li>
+                <li>As a consequence, reduction in fuel consumption is achieved.</li>
+              </ul>
+              <h4>Environmental Benefits</h4>
+              <ul>
+                <li>Reduces the unburnt solids by at least 50%.</li>
+                <li>Reduces NOx by at least 30%.</li>
+                <li>Decreases emission of black smoke and CO gas.</li>
+                <li>Satisfies environmental considerations.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <%- include('./partials/footer') %>
+
+    <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/aos/aos.js"></script>
+    <script>
+      (function () {
+        "use strict";
+
+        /**
+         * Easy selector helper function
+         */
+        const select = (el, all = false) => {
+          el = el.trim();
+          if (all) {
+            return [...document.querySelectorAll(el)];
+          } else {
+            return document.querySelector(el);
+          }
+        };
+
+        /**
+         * Easy event listener function
+         */
+        const on = (type, el, listener, all = false) => {
+          let selectEl = select(el, all);
+          if (selectEl) {
+            if (all) {
+              selectEl.forEach((e) => e.addEventListener(type, listener));
+            } else {
+              selectEl.addEventListener(type, listener);
+            }
+          }
+        };
+
+        /**
+         * Easy on scroll event listener
+         */
+        const onscroll = (el, listener) => {
+          el.addEventListener("scroll", listener);
+        };
+
+        /**
+         * Mobile nav toggle
+         */
+        on("click", ".mobile-nav-toggle", function (e) {
+          select("#navbar").classList.toggle("navbar-mobile");
+          this.classList.toggle("bi-list");
+          this.classList.toggle("bi-x");
+        });
+
+        /**
+         * Mobile nav dropdowns activate
+         */
+        on(
+          "click",
+          ".navbar .dropdown > a",
+          function (e) {
+            if (select("#navbar").classList.contains("navbar-mobile")) {
+              e.preventDefault();
+              this.nextElementSibling.classList.toggle("dropdown-active");
+            }
+          },
+          true
+        );
+      })();
+    </script>
+    <script>
+      // code for AOS
+      AOS.init({
+        duration: 1000,
+        easing: "ease-in-out",
+        once: true,
+        mirror: false,
+      });
+    </script>
+
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({ pageLanguage: "en" }, "google_translate_element");
+      }
+    </script>
+
+    <script
+      type="text/javascript"
+      src="https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit"
+    ></script>
+  </body>
+</html>
